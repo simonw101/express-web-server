@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var portNumber = 3000;
+var portNumber = process.env.PORT || 8080;
 var middleware = require("./middleware.js");
 
 // app.use(middleware.requireAuthentication);
